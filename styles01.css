@@ -1,0 +1,19 @@
+body {
+    margin : 0;
+}
+
+.btn {
+    position: absolute;
+    top: 40px;
+    left: 500px;
+    width: 100px;
+    height: 50px;
+    font-size:150%;
+}
+
+canvas {
+    position: absolute;
+    top : 20%;
+    border : 1px solid black;
+    background : rgb(61, 61, 61);
+}
