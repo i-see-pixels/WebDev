@@ -91,7 +91,7 @@ function connect(){
             let distance = ((particlesArray[a].x - particlesArray[b].x) * (particlesArray[a].x - particlesArray[b].x) + (particlesArray[a].y - particlesArray[b].y) * (particlesArray[a].y - particlesArray[b].y));
             if(distance < (canvas.width/8)*(canvas.height/8)){
                 opacityValue = 1 - (distance/20000);
-                ctx.strokeStyle = 'rgba(140,85,31,' + opacityValue +')';
+                ctx.strokeStyle = `rgba(140,85,31,${opacityValue})`;
                 ctx.lineWidth = 1;
                 ctx.beginPath();
                 ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
